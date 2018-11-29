@@ -1,0 +1,3 @@
+skadossdk>=1.1.9
+turicreate
+s3fs==0.1.6
