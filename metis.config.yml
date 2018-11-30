@@ -7,9 +7,8 @@ jobs:
     entrypoint: "style_transfer.py"
     resources:
       requests:
-        cpu: 6
-        memory: 8Gi
+        cpu: 7
+        memory: 20Gi
       limits:
-        cpu: 6
-        memory: 8Gi
-use_cache: false
+        cpu: 7
+        memory: 20Gi
