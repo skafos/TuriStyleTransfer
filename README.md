@@ -2,7 +2,7 @@
 
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
 
-The following repo contains code for training a style transfer a model on Skafos using the Turi Create framework. As much as possible, the code in this repo mimicks Turi Create's style transfer example which can be found [here](https://apple.github.io/turicreate/docs/userguide/style_transfer/). 
+The following repo contains code for training a style transfer model on Skafos using the Turi Create framework. As much as possible, the code in this repo mimicks Turi Create's style transfer example which can be found [here](https://apple.github.io/turicreate/docs/userguide/style_transfer/). 
 
 ## What is here?
 
