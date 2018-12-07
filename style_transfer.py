@@ -5,7 +5,7 @@ import save_models as sm
 from skafossdk import *
 
 
-ska = Skafos()
+ska = Skafos() # initialize Skafos
 s3 = S3FileSystem(anon=True)
 
 ska.log("Pulling the style and content images from S3", labels = ['style_transfer'])
@@ -14,18 +14,23 @@ style_paths = s3.ls("s3://skafos.example.data/StyleTransferImages/styles/")
 content_paths = s3.ls("s3://skafos.example.data/StyleTransferImages/content/")
 image_paths = style_paths + content_paths
 
-# fi the local paths don't exist
+# if the local paths don't exist, make them
 for _dir in ['content', 'styles']:
     if not os.path.exists(_dir):
         os.makedirs(_dir)
+        
+# generate two empty image SFrames
+styles = tc.SFrame(); content = tc.SFrame();
 
 ska.log("Building the necessary SFrames for model build", labels = ['style_transfer'])
-# build the styles SFrame and the content SFrame
-styles = tc.SFrame(); content = tc.SFrame();
+# loop over the image paths, adding them to the SFrames
 for p in image_paths:
+    # distinguish styles from content based on path
     _type = p.split("/")[-2]
     local_path = "/".join(p.split("/")[-2:])
-    img1 = s3.get("s3://" + p, "./"+local_path)
+    img1 = s3.get("s3://" + p, "./"+local_path) # download the image
+    
+    # add the image to the SFrames
     if _type == "styles":
         styles = styles.append(tc.load_images(local_path))
     if _type == "content":
