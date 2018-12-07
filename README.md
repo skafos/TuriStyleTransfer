@@ -11,7 +11,7 @@ The two main components to this repo are:
 - `style_transfer.ipynb` - a python notebook with the same code as the above `style_transfer.py` job.
 
 Additionallly, there exists:
-- `metis.config.yml` - a file telling Skafos how to executthe jobs in this project
+- `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `save_models.py` - a helper module to save the core ml model to Skafos
 
