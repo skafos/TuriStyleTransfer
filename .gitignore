@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+*.model
+*.mlmodel
+__pycache__/
+content/
+styles/
