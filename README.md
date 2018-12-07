@@ -17,5 +17,5 @@ Additionallly, there exists:
 
 ## Further notes:
 - To get this to run, the model required training images. Specifically, *style* and *content* images.
-- The images for this project came from [Pexels.com](https://www.pexels.com/) as it has many free images available.
+- The images for this project came from [Pexels.com](https://www.pexels.com/) which has many free images available for download.
 - For retraining this object detection model on new data, we highly recommend doing it on a GPU. As benchmarks, we've found that training this Turi Create object detection model takes about 90 minutes on a GPU and about 3 days on Skafos with 6 CPU's and 10G of memory. Training will take considerably more time locally using only CPU. GPU support on Skafos is currently in development and will be coming soon.
