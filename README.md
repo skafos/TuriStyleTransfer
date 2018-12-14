@@ -19,3 +19,21 @@ Additionallly, there exists:
 - To get this to run, the model required training images. Specifically, *style* and *content* images.
 - The images for this project came from [Pexels.com](https://www.pexels.com/) which has many free images available for download.
 - For retraining this style transfer model on new data, we highly recommend doing it on a GPU. As benchmarks, we've found that training this Turi Create style transfer model takes about 90 minutes on a GPU and about 3 days on Skafos with 7 CPU's and 20G of memory. Training will take considerably more time locally using only CPU. GPU support on Skafos is currently in development and will be coming soon.
+
+## Going beyond the example:
+- The easiest way to incorporate your own data is to have a directory with images in it and then pass this directory to Turi Create's `load_images` function or directly to the `tc.style_transfer.create()` function.
+- Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/style_transfer/).
+
+#### Stylizing new images
+Once you've trained a model on a set of content and styles, "predicting" or stylizing new images can be done as follows:
+
+```python
+# load the images
+test_images = tc.load_images('test/')
+
+# Only the first style
+stylized_image = model.stylize(test_images, style=0)
+
+# Stylize the image using all trained styles
+stylized_images = model.stylize(test_images)
+```
