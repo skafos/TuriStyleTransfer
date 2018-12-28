@@ -1,7 +1,7 @@
 from s3fs.core import S3FileSystem
 import turicreate as tc
 import os
-import save_models as sm
+import common.save_models as sm
 from skafossdk import *
 
 
