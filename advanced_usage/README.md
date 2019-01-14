@@ -16,4 +16,4 @@ Please contact us with questions or feedback! Here are two ways:
 -  [**Signup for our Slack Channel**](https://skafosai.slack.com/)
 -  [**Find us on Reddit**](https://reddit.com/r/skafos)
 
-Also checkout Turi Create's [**documentation**](https://apple.github.io/turicreate/docs/userguide/style_transfer/) on style transfer basics.
+Also check out Turi Create's [**documentation**](https://apple.github.io/turicreate/docs/userguide/style_transfer/) on style transfer basics.
