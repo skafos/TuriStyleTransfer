@@ -11,7 +11,7 @@ The following repo contains code for training a style transfer model on Skafos u
 -  `requirements.txt` - a file describing all required Python dependencies.
 
 ## About the model
--  The style transfer model creates a deep learning model capable of detecting and preserving the content features in images, and then applying the color scheme and texture of the style image.
+-  The style transfer model creates a deep learning model capable of detecting and preserving the content features in images, and then applying the color scheme and texture of style images to the content images.
 -  The style transfer model is trained on abstract art images (style) and plant images (content) taken from [Pexels.com](www.pexels.com).
 -  Once trained, you can give the model a new image and apply the color scheme and texture of each of the style images to the new image.
 
