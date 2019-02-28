@@ -1,4 +1,4 @@
-skafossdk==1.2.0.dev2
+skafossdk==1.2.1
 turicreate==5.3.1
 coremltools==2.1.0
 s3fs==0.1.6
